@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>sample calculator</title>
+  <h3>MY CALCULATOR</h3>
+  <script type="text/javascript" src="./javascript.js"></script>
+  <style>
+    #calculator-buttons {
+      background-color: lawngreen;
+      height: 200px;
+      width: 200px;
+      border: 5px solid black;
+
+    }
+
+    input:hover {
+      background-color: red;
+      color: white;
+    }
+
+    #number-Buttons {
+      margin: 10px;
+      height: 40px;
+    }
+
+    .one {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="calculator-buttons">
+
+    <input id="number-Buttons">
+    <br>
+    <div class="one">
+
+      <input type="button" name=2 value=2 onclick="enterTheValues(2)">
+      <input type="button" name=1 value=1 onclick="enterTheValues(1)">
+      <input type="button" name=3 value=3 onclick="enterTheValues(3)">
+      <input type="button" name=4 value=4 onclick="enterTheValues(4)">
+      <br>
+    </div>
+    <div class="one">
+      <input type="button" name=5 value=5 onclick="enterTheValues(5)">
+      <input type="button" name=6 value=6 onclick="enterTheValues(6)">
+      <input type="button" name=7 value=7 onclick="enterTheValues(7)">
+      <input type="button" name=8 value=8 onclick="enterTheValues(8)">
+      <br>
+    </div>
+    <div class="one">
+      <input type="button" name=9 value=9 onclick="enterTheValues(9)">
+      <input type="button" name=0 value=0 onclick="enterTheValues(0)">
+      <input type="button" name=+ value=+ onclick="enterTheValues('+')">
+      <input type="button" name=- value=- onclick="enterTheValues('-')">
+      <br>
+    </div>
+    <div class="one">
+      <input type="button" name=/ value=/ onclick="enterTheValues('/')">
+      <input type="button" name=* value=* onclick="enterTheValues('*')">
+      <input type="button" name="=" value="=" onclick="result();">
+      <input type="button" name="AC" value="AC" onclick="reset();">
+    </div>
+  </div>
+</body>
+
+</html>
